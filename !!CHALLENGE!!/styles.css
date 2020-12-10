@@ -1,0 +1,57 @@
+body {
+    background: #bfd3f2;
+    font-family: 'Andika New Basic', sans-serif;
+    margin-left: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+input {
+    float: left;
+    margin: 6px 6px 0 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content{
+    flex: 3;
+}
+
+
+.sidebar {
+    background: #fce6c2;
+    margin: -10px -10px 0 0;
+    padding-left: 10px;
+    flex: 1;
+}
+
+img {
+    width: 20%;
+    height:20%;
+    transition: all 800ms ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+#img-in-para {
+    float: right;
+    margin-right: 10px;
+}
+
+
+.sidebar div {
+    margin-top: 10px;
+    border: 0.1px solid saddlebrown  ;
+    padding-left: 10px;
+}
+
+a:hover {
+    color: aqua;
+}
