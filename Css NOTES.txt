@@ -1,3 +1,16 @@
+//?????? QUESTION ?????? name the different types of selectors
+//?????? QUESTION ?????? list the order of specificity
+//?????? QUESTION ?????? what is a pseudo-selector
+//?????? QUESTION ?????? change the color of a h2 to red when someone hovers
+
+
+
+
+
+
+
+
+
 there are 3 types of selectors
 1. element selector. bottom of specificity scale
     body {
@@ -26,7 +39,7 @@ the specificity for selectors is:
 
 
 
-PSEUDOSELECTORS
+PSEUDO-SELECTORS
 only visible when something is done on the website
 
 h2:hover {
@@ -37,7 +50,7 @@ h2:hover {
 this will change the color of h2 when you hover the element
 
 
-other notable psudoselectors include:
+other notable pseudo-selectors include:
 li:first-child
 li:last-child
 li:nth-child(3)         //every 3rd child will be applied the style
@@ -81,6 +94,28 @@ img[src*='img/public'] {}               // * anywhere
 
 
 
+
+
+
+
+
+//?????? QUESTION ?????? make a background image fill the whole space
+//?????? QUESTION ?????? make a background image not to repeat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //background image properties
 
 background-repeat: no-repeat;       //repeat is default
@@ -111,6 +146,33 @@ background: radial-gradient(red 20%, blue)
 
 2. linear
 background: linear-gradient(to right, red, blue);
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? list the different types of units
+//?????? QUESTION ?????? explain the difference between 5%, 5vh, 5rem and 5em
+//?????? QUESTION ?????? explain the different font families
+//?????? QUESTION ?????? select a font from google fonts and post here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,6 +230,38 @@ copy the link tag that they'll give you and make sure you paste it before your s
 
 
 
+
+
+
+
+//?????? QUESTION ?????? list the structure of the box model and explain what each element does
+//?????? QUESTION ?????? list the 4 ways which you can do your padding/ margin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // THE BOX MODEL
 
     margin
@@ -204,6 +298,30 @@ padding: 80px 40px;             //80 for top and bottom, 40 for left and right
 
 
 
+
+
+
+
+
+
+
+//?????? QUESTION ?????? list the different display types
+//?????? QUESTION ?????? what are the different float properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // FLOAT AND DISPLAY TYPES
 
 elements have 3 display types
@@ -219,7 +337,37 @@ FLOAT PROPERTIES
 float: right;
 this will move the element to the right and the element below it will move to the left of it
 float: inherit;
+going to take the float property of the parent element. place it at the parent element and the children elements will all inherit the float property
 float: non-value;
+this is the default float value if you don't specify anything
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? assuming you have a class container, make it use flexbox system
+//?????? QUESTION ?????? which flex property is responsible for direction and list its different attributes
+//?????? QUESTION ?????? which flex property is used to align items in a flex container horizontally and the one responsible for vertical alignment
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -279,6 +427,7 @@ flex-grow: 1;
 
 flex-shrink: 1;
 //inline
+//default value is 1
 // similar to flex grow but it defines the shrinkage
 // 0 no shrinkage
 
