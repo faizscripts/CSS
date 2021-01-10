@@ -2,6 +2,24 @@
 //?????? QUESTION ?????? list the order of specificity
 //?????? QUESTION ?????? what is a pseudo-selector
 //?????? QUESTION ?????? change the color of a h2 to red when someone hovers
+//?????? QUESTION ?????? select a h2 which has the class subtitle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,6 +117,8 @@ img[src*='img/public'] {}               // * anywhere
 
 
 
+
+
 //?????? QUESTION ?????? make a background image fill the whole space
 //?????? QUESTION ?????? make a background image not to repeat
 
@@ -145,7 +165,7 @@ there are 2 types
 background: radial-gradient(red 20%, blue)
 
 2. linear
-background: linear-gradient(to right, red, blue);
+background: linear-gradient(to right, red, blue)
 
 
 
@@ -154,7 +174,10 @@ background: linear-gradient(to right, red, blue);
 
 
 
-//?????? QUESTION ?????? list the different types of units
+
+
+
+//?????? QUESTION ?????? list the different types of units with examples
 //?????? QUESTION ?????? explain the difference between 5%, 5vh, 5rem and 5em
 //?????? QUESTION ?????? explain the different font families
 //?????? QUESTION ?????? select a font from google fonts and post here
@@ -225,6 +248,9 @@ using external fonts
 go to google fonts and pick the fonts that you want
 
 copy the link tag that they'll give you and make sure you paste it before your style sheet
+
+
+
 
 
 
@@ -357,6 +383,9 @@ this is the default float value if you don't specify anything
 //?????? QUESTION ?????? assuming you have a class container, make it use flexbox system
 //?????? QUESTION ?????? which flex property is responsible for direction and list its different attributes
 //?????? QUESTION ?????? which flex property is used to align items in a flex container horizontally and the one responsible for vertical alignment
+//?????? QUESTION ?????? how would you arrange elements using flex
+//?????? QUESTION ?????? explain flex basis, growth and shrink
+//?????? QUESTION ?????? use the basis, growth and shrink shorthand to align a specific element in a flex container
 
 
 
@@ -434,7 +463,7 @@ flex-shrink: 1;
 flex: 1 1 100px;
 / inline
 // this is a shortcut to use flex grow, shrink and basis in one go
-// it takes in 3 values in the order, grow, shrink or basis
+// it takes in 3 values in the order: grow, shrink or basis
 
 align-self: flex-start
 //inline
@@ -445,6 +474,24 @@ align-self: flex-start
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//?????? QUESTION ?????? assuming you have a class container, make it use a grid system
+//?????? QUESTION ?????? make your grid have 3 columns and 2 rows
+//?????? QUESTION ?????? what properties are responsible for a grid's horizontal and vertical alignment an list out their different attributes
+//?????? QUESTION ?????? which grid properties are responsible for spacing between the grid items
 
 
 
@@ -582,7 +629,7 @@ it is split up into keyframes, start, end and you can add your own keyframes als
 you can name it whatever you want
 
 
-@keyframes translate_element {
+@keyframes red-to-black {
     from {background: red;}
     to {background: black}
 }
