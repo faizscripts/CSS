@@ -3,6 +3,11 @@
 //?????? QUESTION ?????? what is a pseudo-selector
 //?????? QUESTION ?????? change the color of a h2 to red when someone hovers
 //?????? QUESTION ?????? select a h2 which has the class subtitle
+//?????? QUESTION ?????? explain the following
+h1 + a {}
+textarea ~ button {}
+ul > li {}
+ul li {}
 
 
 
@@ -166,6 +171,10 @@ background: radial-gradient(red 20%, blue)
 
 2. linear
 background: linear-gradient(to right, red, blue)
+
+
+
+
 
 
 
@@ -379,13 +388,13 @@ this is the default float value if you don't specify anything
 
 
 
-
 //?????? QUESTION ?????? assuming you have a class container, make it use flexbox system
 //?????? QUESTION ?????? which flex property is responsible for direction and list its different attributes
 //?????? QUESTION ?????? which flex property is used to align items in a flex container horizontally and the one responsible for vertical alignment
 //?????? QUESTION ?????? how would you arrange elements using flex
 //?????? QUESTION ?????? explain flex basis, growth and shrink
 //?????? QUESTION ?????? use the basis, growth and shrink shorthand to align a specific element in a flex container
+//?????? QUESTION ?????? align a single item in a flex container
 
 
 
@@ -471,6 +480,20 @@ align-self: flex-start
 // use the same values, flex-start, flex-end and center. stretch and baseline dont work though
 // overrides container alignment
 
+}
+
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-row: 2;
+    grid-template-column: 3;
+    justify-content: start, end, center, space-evenly, space-around
+    align-content:
+    column
 }
 
 
