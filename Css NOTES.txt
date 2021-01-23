@@ -697,7 +697,39 @@ you can simplify this by using the animation shorthand
 
 
 
+///         BEFORE & AFTER PSEUDO ELEMENTS          ///
 
+uses a double colon
+
+the content attribute is the activator of the pseudo class
+
+before basically means inserting the content before the specified element and after comes after the content of the specified element
+
+p::before {
+    content: '';
+}
+
+pseudo elements dont work for images
+
+
+p::after {
+    content: 'Hello';           // this will display hello to the page
+}
+
+
+
+pseudo elements are inline by default
+
+
+use cases of before and after include
+
+
+content: url('fjvdp');
+inserting background images
+
+
+content: open-quote;
+content: close-quote;
 
 
 
