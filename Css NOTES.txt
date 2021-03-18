@@ -740,6 +740,178 @@ content: close-quote;
 
 
 
+///         CSS POSITIONING         ///
+
+
+1.  static is the default positioning which means that the element should follow the normal flow of documents
+
+z-index doesn't work in static elements
+
+
+
+2.  relative positioning works almost the same way as static positioning but it allows you to do 4 things that static positioning doesn't
+with relative positioning you can change the top, right, bottom and left position of the element
+
+.child {
+    position: relative;
+    left: 10px;             //this will move the element 10px on the left
+}
+
+
+with relative positioning, it will take the element out of the regular flow of elements and it might overflow the other static elements
+
+
+
+3. absolute. with absolute, it will act like the element doesn't exist at all and it will kind of not occupy any space at all in the sense that if you delete the element no visible changes show on the page
+
+this is important in the case where you want to stick an element somewhere without moving anything else
+
+one thing to note with absolute is that the element will reference a "hypothetical" parent element and moving the element using top, left, right and bottom will be based off that parent element
+
+in order to get around this, we will change the class of the parent which we want to absolute position the child to position relative.
+
+absolute positioning works with the nearest parent whose class isn't static otherwise it will go back all the way to the root html element
+
+absolute is relative to its original position, however, once you start adding top, left etc. it becomes relative to the nearest parent whose position isn't static
+
+
+
+4.  fixed positioning   - similar to absolute positioning. the difference is that fixed position will ignore all other parent elements and it will be based of off the root html element
+
+
+they also stay in the same place when you scroll
+
+
+
+5. sticky       - this is a combination of relative and fixed position. it positions like relative positioning where you won't notice any difference but when you start scrolling it becomes fixed and it stays at the top of the page
+
+
+
+
+
+
+
+
+
+
+
+///         OBJECT FIT              ///
+
+used to make responsive images.
+
+it has different properties namely
+
+1. contain  -   maintains the aspect ration of the image and it's going to squeeze the image so that it fits in the container
+   this however might not fit the container perfectly
+
+2. cover    -   maintains the aspect ratio and it is going to crop out the excess
+
+
+
+
+
+
+
+how to make images have the same sizes
+
+1. add height to your images so that they can have the same size although some images will be stretched
+2. in order to remove the stretching, we will use object fit cover which maintains the same aspect ratio of the image and crops of the excess
+3. use object position to choose the side of the image you want to be shown and not cropped out
+
+img {
+    height: 7rem;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+
+
+
+// SELECTORS
+
+
+*{}                             -   selects everything
+
+
+.some-class                     - preferred over id and element selectors
+
+
+div.red                         - div with a particular class
+
+
+li, span{}                      - li or spans will be selected
+
+
+ul li {}                        - selects all the li's inside the ul, the space basically means anything inside the element that comes before it i.e any li inside the ul whether it is a direct child or not
+
+
+ul > li {}                      - selects only direct children
+
+
+li.red ~ li {}                  - all the siblings which come after an li which has a class of red
+
+
+li.red + li {}                  - next sibling li which comes an li with a class of red
+
+
+input:hover {}
+
+
+input:focus {}
+
+
+li:first-child {}
+
+
+li:last-child {}
+
+
+li:nth-child(3) {}
+
+
+li:only-child {}                    - it is going to select if it is the only child
+
+
+li:not(.red)                        - any li that does not have the class of red
+
+
+[type='password'] {}                - will select the element which has the attribute of type = password
+
+
+[src ^='12'] {}                       - begins with 12
+
+
+[src $='12'] {}                       - ends with 12
+
+
+[src *='12'] {}                       - contains 12 anywhere
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
